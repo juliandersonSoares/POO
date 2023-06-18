@@ -27,7 +27,7 @@
         $this->senha=$s;
     }
     public function Logar(){
-        if ($this->email == "teste@teste.com" and $this->senha=="123456"):
+        if ($this->email == "teste@teste.com" and $this->senha=="123456" and $this->nome=="julianderson"):
             echo "Logado com sucesso!";
         else:
             echo "Dados inválidos";
@@ -36,7 +36,7 @@
         
     } 
 }
-$logar = new Login("teste@teste.com","123456","Julianderson");
+$logar = new Login("teste@teste.com","123456","julianderson");
 $logar->Logar();
 echo "<br>";
 echo $logar->getNome();
